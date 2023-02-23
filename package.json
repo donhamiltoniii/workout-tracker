@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "dev": "concurrently \"nodemon src/index.ts\" \"npm run sass\"",
     "sass": "sass --watch src/scss/main.scss src/public/css/main.css",
     "start": "ts-node src/index.ts"
