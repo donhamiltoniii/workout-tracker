@@ -2,7 +2,7 @@
 import express from "express";
 import path from "path";
 import { engine } from "express-handlebars";
-import { router } from "./routes";
+import { homeRouter } from "./routes";
 
 const app = express();
 
@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, "public")));
 console.log(path.join(__dirname, "public"));
 
 // Setup routes
-app.use(router);
+app.use(homeRouter);
 
 // Start server
 app.listen(3000, () => {

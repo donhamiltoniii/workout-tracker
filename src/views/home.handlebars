@@ -1,2 +1,13 @@
-<h1>Example App: Home</h1>
-<p class="example">Welcome to the example app!</p>
+<h1>Workout Tracker</h1>
+<h2>Workouts</h2>
+<ul>
+  {{#each workouts}}
+    <li>{{this.name}}</li>
+  {{/each}}
+</ul>
+<h2>Exercises</h2>
+<ul>
+  {{#each exercises}}
+    <li>{{this.name}}</li>
+  {{/each}}
+</ul>
